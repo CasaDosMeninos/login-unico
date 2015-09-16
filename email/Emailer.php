@@ -1,5 +1,4 @@
 <?php
-require_once '../config.php';
 class Emailer
 {
     var $recipients = array();
