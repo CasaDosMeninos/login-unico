@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 //        var_dump($result['count']); exit;
         $data['objectClass'][0] = 'userControl';
         $data['objectClass'][1] = 'inetOrgPerson';
-        $data['objectClass'][2] = 'PosixAccount';
+//        $data['objectClass'][2] = 'PosixAccount';
 
         $data['cn'] = $data['sn'] = $_REQUEST['nome'];
         $data['uid'] = $data['mail'] = $_REQUEST['email'];
