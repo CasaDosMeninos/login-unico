@@ -14,6 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 //        var_dump($result['count']); exit;
         $data['objectClass'][0] = 'userControl';
         $data['objectClass'][1] = 'inetOrgPerson';
+        $data['objectClass'][2] = 'PosixAccount';
 
         $data['cn'] = $data['sn'] = $_REQUEST['nome'];
         $data['uid'] = $data['mail'] = $_REQUEST['email'];
@@ -22,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
         $data['homePhone'] = $_REQUEST['telefone2'];
         $data['homePostalAddress'] = $_REQUEST['endereco'];
         $data['postalCode'] = $_REQUEST['cep'];
-        $data['userPassword'] = $_REQUEST['senha'];
+        $data['senha'] = md5($_REQUEST['senha']);
         $data['birthdate'] = $_REQUEST['nascimento'];
 
         $data['categoria'] = $_REQUEST['categoria'];
