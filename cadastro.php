@@ -87,12 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             </button>
             <a class="navbar-brand" href="index.php">Login Único CM</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="cadastro.php">Cadastro</a></li>
-                <li><a href="login.php">Admin</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
+        <?php require_once 'nav.php'; ?><!--/.nav-collapse -->
     </div>
 </nav>
 

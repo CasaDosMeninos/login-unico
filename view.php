@@ -60,13 +60,7 @@ $keys = array_keys($result[0]);
             </button>
             <a class="navbar-brand" href="index.php">Login Único CM</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="cadastro.php">Cadastro</a></li>
-                <li class="active"><a href="login.php">Admin</a></li>
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
+        <?php require_once 'nav.php'; ?><!--/.nav-collapse -->
     </div>
 </nav>
 

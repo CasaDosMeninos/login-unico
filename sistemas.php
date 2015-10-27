@@ -1,25 +1,3 @@
-<?php
-session_start();
-require_once 'config.php';
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $email = $_REQUEST['email'];
-    $pass = $_REQUEST['senha'];
-
-    if ($email == ADM_USER && $pass == ADM_PASSWORD) {
-        setcookie('logado', true);
-        header('location: admin.php');
-    }
-    else
-        $erro = 1;
-}
-
-if (isset($_COOKIE['logado']))
-    header('location: admin.php');
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,41 +49,9 @@ if (isset($_COOKIE['logado']))
 
 <div class="container">
     <div class="starter-template">
-        <?php if (isset($erro)) { ?>
-            <div class="alert alert-danger">
-                <strong>Erro!</strong> Login Inválido
-            </div>
-        <?php } ?>
-
-        <form class="form-horizontal" action="#" method="post">
-            <fieldset>
-                <!-- Text input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="email">E-mail</label>
-                    <div class="col-md-4">
-                        <input name="email" class="form-control input-md" id="email" required="" type="text">
-                    </div>
-                </div>
-
-                <!-- Password input-->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="senha">Senha</label>
-                    <div class="col-md-4">
-                        <input name="senha" class="form-control input-md" id="senha" required="" type="password">
-
-                    </div>
-                </div>
-
-                <!-- Button -->
-                <div class="form-group">
-                    <label class="col-md-4 control-label" for="submit"></label>
-                    <div class="col-md-4">
-                        <button name="submit" class="btn btn-primary" id="submit">Enviar</button>
-                    </div>
-                </div>
-
-            </fieldset>
-        </form>
+        <ul>
+            <li><a href="http://biblioteca.basecomum.org.br">Biblioteca Virtual</a></li>
+        </ul>
     </div>
 </div>
 
