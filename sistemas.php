@@ -49,7 +49,7 @@
 
 <div class="container">
     <div class="starter-template">
-        <ul>
+        <ul style="list-style-type: none">
             <li><a href="http://biblioteca.basecomum.org.br">Biblioteca Virtual</a></li>
         </ul>
     </div>
