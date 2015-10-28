@@ -23,7 +23,7 @@ define('ADM_USER', 'admin');
 define('ADM_PASSWORD', '123');
 
 // Configurações do Servidor LDAP
-define('LDAP_HOST', '192.168.1.148');
+define('LDAP_HOST', 'cmweb');
 define('LDAP_SUFFIX', 'dc=intranet,dc=cm,dc=net');
 define('LDAP_USER', 'admin');
 define('LDAP_PASSWORD', '123');
