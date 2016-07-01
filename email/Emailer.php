@@ -34,14 +34,14 @@ class Emailer
         $mail->CharSet = 'UTF-8';
 
         $mail->isSMTP();
-        $mail->Host = SMTP_HOST;
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Port = SMTP_PORT;
-        $mail->Username = SMTP_USER;
-        $mail->Password = SMTP_PASSWORD;
+        $mail->Port = 465;
+        $mail->Username = 'basecomumcidada@gmail.com';
+        $mail->Password = 'macambira';
 
-        $mail->From = 'from@example.com';
-        $mail->FromName = 'Mailer';
+        $mail->From = 'basecomumcidada@gmail.com';
+        $mail->FromName = 'Casa dos Meninos';
         foreach ($this->recipients as $to)
             $mail->addAddress($to);
 
