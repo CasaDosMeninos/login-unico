@@ -1,0 +1,14 @@
+dn: uid=rasouza26@gmail.com,ou=People,dc=intranet,dc=cm,dc=net
+objectClass: userControl
+objectClass: inetOrgPerson
+sn: fdsafd
+cn: fdsafd
+mail: rasouza26@gmail.com
+uid: rasouza26@gmail.com
+mobile: 11111111
+homePhone: 2222222222
+homePostalAddress: Rua Teodoro Sampaio, 88
+postalCode: 43444-444
+senha: 4297f44b13955235245b2497399d7a93
+birthdate: 32/13/4432
+categoria: nenhuma

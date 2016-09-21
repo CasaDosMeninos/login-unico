@@ -1,0 +1,14 @@
+dn: uid=alves.wm@gmail.com,ou=People,dc=intranet,dc=cm,dc=net
+objectClass: userControl
+objectClass: inetOrgPerson
+sn: Nome
+cn: Nome
+mail: alves.wm@gmail.com
+uid: alves.wm@gmail.com
+mobile: 11111111
+homePhone: 2222222222
+homePostalAddress: Rua Teodoro Sampaio, 88
+postalCode: 43444-444
+senha: 4297f44b13955235245b2497399d7a93
+birthdate: 32/13/4432
+categoria: nenhuma
